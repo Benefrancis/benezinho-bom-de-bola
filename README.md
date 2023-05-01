@@ -17,6 +17,8 @@ Checkpoint I - Enterprise Application Development aplicada em 29/03/2023.
 
 [Diagrama de Classes ](#_Diagrama_de_Classes)
 
+[Correção da Prova ](#_Correcao)
+
 <a id="_Estudo_de_caso"></a>
 # Estudo de caso
 
@@ -78,10 +80,12 @@ A prova é individual, em caso de fraude de qualquer tipo todos os envolvidos re
 
 Boa prova.
 
+
+<a id="_Correcao"></a>
+# Correção da Prova
 A correção da prova será disponibilizada no github do professor (branch correcao):
 
-https://github.com/Benefrancis/benezinho-bom-de-bola
-
+Para acessar digite no prompt:
 
 ```
 git clone https://github.com/Benefrancis/benezinho-bom-de-bola.git && cd benezinho-bom-de-bola && git checkout -b correcao
