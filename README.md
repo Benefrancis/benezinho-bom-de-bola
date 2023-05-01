@@ -88,7 +88,7 @@ A correção da prova será disponibilizada no github do professor (branch corre
 Para acessar digite no prompt:
 
 ```
-git clone https://github.com/Benefrancis/benezinho-bom-de-bola.git && cd benezinho-bom-de-bola && git checkout -b correcao
+git clone https://github.com/Benefrancis/benezinho-bom-de-bola.git && cd benezinho-bom-de-bola && git checkout correcao
 ```
 
 
