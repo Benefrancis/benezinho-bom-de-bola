@@ -84,8 +84,7 @@ https://github.com/Benefrancis/benezinho-bom-de-bola
 
 
 ```
-git clone https://github.com/Benefrancis/benezinho-bom-de-bola.git
-git branch correcao
+git clone https://github.com/Benefrancis/benezinho-bom-de-bola.git && cd benezinho-bom-de-bola && git checkout -b correcao
 ```
 
 
