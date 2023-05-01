@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0270f6fd-eb73-44d2-9159-d8b54d410447" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/documentacao/diagrama.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documentacao/fiap.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documentacao/fiap.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documentacao/~$ova - Check Point 1 - JPA - BENEZINHO-BOM-DE-BOLA.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentacao/Prova - Check Point 1 - JPA - BENEZINHO-BOM-DE-BOLA.docx" beforeDir="false" afterPath="$PROJECT_DIR$/documentacao/Prova - Check Point 1 - JPA - BENEZINHO-BOM-DE-BOLA.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/documentacao/Prova - Check Point 1 - JPA - BENEZINHO-BOM-DE-BOLA.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/documentacao/Prova - Check Point 1 - JPA - BENEZINHO-BOM-DE-BOLA.pdf" afterDir="false" />
+    <list default="true" id="0270f6fd-eb73-44d2-9159-d8b54d410447" name="Changes" comment="Atualizando o README.md">
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/fiap/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +20,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="correcao" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -86,14 +84,68 @@
       <updated>1680061676167</updated>
       <workItem from="1680061677522" duration="1866000" />
       <workItem from="1682975273916" duration="53000" />
-      <workItem from="1682975639900" duration="1338000" />
+      <workItem from="1682975639900" duration="3746000" />
     </task>
+    <task id="LOCAL-00001" summary="Atualizando o README.md">
+      <created>1682977606555</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1682977606555</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Atualizando o README.md">
+      <created>1682978198489</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1682978198489</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Atualizando o README.md">
+      <created>1682978379096</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1682978379096</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Atualizando o README.md">
+      <created>1682978691839</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1682978691839</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/correcao" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Atualizando o README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Atualizando o README.md" />
   </component>
 </project>
