@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0270f6fd-eb73-44d2-9159-d8b54d410447" name="Changes" comment="Atualizando o README.md">
+    <list default="true" id="0270f6fd-eb73-44d2-9159-d8b54d410447" name="Changes" comment="Criamos uma instância do EntityManager para gerenciamentos das transações com o banco de dados.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/fiap/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/fiap/model/Atleta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/model/Atleta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/fiap/model/Fundamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/model/Fundamento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/fiap/model/Preparador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/model/Preparador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/fiap/model/Treino.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/fiap/model/Treino.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +68,19 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.fiap.Main" />
+      <module name="benezinho-bom-de-bola" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.fiap.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -73,6 +92,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -84,7 +108,7 @@
       <updated>1680061676167</updated>
       <workItem from="1680061677522" duration="1866000" />
       <workItem from="1682975273916" duration="53000" />
-      <workItem from="1682975639900" duration="3746000" />
+      <workItem from="1682975639900" duration="11056000" />
     </task>
     <task id="LOCAL-00001" summary="Atualizando o README.md">
       <created>1682977606555</created>
@@ -114,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682978691839</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Criamos uma instância do EntityManager para gerenciamentos das transações com o banco de dados.">
+      <created>1682979451732</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1682979451732</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,6 +177,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Atualizando o README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Atualizando o README.md" />
+    <MESSAGE value="Criamos uma instância do EntityManager para gerenciamentos das transações com o banco de dados." />
+    <option name="LAST_COMMIT_MESSAGE" value="Criamos uma instância do EntityManager para gerenciamentos das transações com o banco de dados." />
   </component>
 </project>

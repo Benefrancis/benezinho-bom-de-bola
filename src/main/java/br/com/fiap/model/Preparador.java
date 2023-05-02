@@ -1,17 +1,31 @@
 package br.com.fiap.model;
 
+import jakarta.persistence.*;
+
 /**
  * @author Benefrancis do Nascimento
  * <p>
  * Classe que representa o profissional de Educação Física
  */
+@Entity
+@Table(name = "TB_PREPARADOR",
+        uniqueConstraints = {@UniqueConstraint(
+                name = "UK_NR_CREF",
+                columnNames = "NR_CREF"
+        )})
 public class Preparador {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SQ_PREPARADOR")
+    @SequenceGenerator(name = "SQ_PREPARADOR", sequenceName = "SQ_PREPARADOR")
+    @Column(name = "ID_PREPARADOR")
     private long id;
 
+    @Column(name = "NM_PREPARADOR")
     private String nome;
 
     //Número de registro no Conselho Regional de Educação Física
+    @Column(name = "NR_CREF")
     private String CREF;
 
     public Preparador() {

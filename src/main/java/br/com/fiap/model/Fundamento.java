@@ -1,9 +1,14 @@
 package br.com.fiap.model;
 
+import jakarta.persistence.*;
+
 /**
  * @author Benefrancis do Nascimento
+ *
  * <p>
- * Fundamento do esporte Ex:
+ * Classe que representa o fundamento do esporte Ex:
+ * <p>
+ *
  * Cabeceio,
  * finalização com pé direito,
  * finalização com pé esquerdo,
@@ -11,10 +16,21 @@ package br.com.fiap.model;
  * chute com peito do pé,
  * chute com a chapa do pé
  */
+@Entity
+@Table(name = "TB_FUNDAMENTO",
+        uniqueConstraints = {@UniqueConstraint(
+                name = "UK_NM_FUNDAMENTO",
+                columnNames = "NM_FUNDAMENTO"
+        )})
 public class Fundamento {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SQ_FUNDAMENTO")
+    @SequenceGenerator(name = "SQ_FUNDAMENTO", sequenceName = "SQ_FUNDAMENTO")
+    @Column(name = "ID_FUNDAMENTO")
     private long id;
 
+    @Column(name = "NM_FUNDAMENTO")
     private String nome;
 
     public Fundamento() {
@@ -24,7 +40,6 @@ public class Fundamento {
         this.id = id;
         this.nome = nome;
     }
-
 
     public long getId() {
         return id;

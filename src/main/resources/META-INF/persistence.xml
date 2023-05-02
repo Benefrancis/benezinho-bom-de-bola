@@ -5,12 +5,21 @@
         <properties>
             <property name="jakarta.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
             <property name="jakarta.persistence.jdbc.url" value="jdbc:oracle:thin:@localhost:1521:XE"/>
-            <property name="jakarta.persistence.jdbc.user" value="system"/>
+            <property name="jakarta.persistence.jdbc.user" value="BENEZINHO"/>
             <property name="jakarta.persistence.jdbc.password" value="root"/>
             <property name="hibernate.dialect" value="org.hibernate.dialect.OracleDialect"/>
             <property name="hibernate.hbm2ddl.auto" value="update"/>
             <property name="hibernate.show_sql" value="true"/>
             <property name="hibernate.format_sql" value="true"/>
+            <!--            https://in.relation.to/2017/02/01/non-temporary-table-bulk-id-strategies/-->
+            <!--            Se você pode usar tabelas temporárias, essa provavelmente é a melhor escolha. No entanto, se você não tiver permissão para criar tabelas temporárias, deverá escolher uma dessas quatro estratégias que funcionem com seu banco de dados subjacente. Antes de decidir, você deve avaliar qual funciona melhor para sua carga de trabalho atual. Por exemplo, CTE são cercas de otimização no PostgreSQL , portanto, certifique-se de medir antes de tomar uma decisão.-->
+            <!--            Se você estiver usando Oracle ou MySQL 5.7, poderá escolher InlineIdsOrClauseBulkIdStrategyou InlineIdsInClauseBulkIdStrategy. Para uma versão mais antiga do MySQL, você só pode usar InlineIdsOrClauseBulkIdStrategy.-->
+            <!--            Se você estiver usando Spring Data:      spring.jpa.hibernate.hql.bulk_id_strategy=org.hibernate.hql.spi.id.inline.InlineIdsInClauseBulkIdStrategy-->
+            <!--            Se você estiver usando o SQL Server, InlineIdsOrClauseBulkIdStrategyé a única opção para você.-->
+            <!--            Se estiver usando o PostgreSQL, você pode se dar ao luxo de escolher qualquer uma dessas quatro estratégias.-->
+            <property name="hibernate.hql.bulk_id_strategy"
+                      value="org.hibernate.hql.spi.id.inline.InlineIdsOrClauseBulkIdStrategy"
+            />
         </properties>
     </persistence-unit>
 </persistence>

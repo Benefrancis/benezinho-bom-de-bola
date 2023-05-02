@@ -1,29 +1,58 @@
 package br.com.fiap.model;
 
+import jakarta.persistence.*;
+
 import java.time.LocalDateTime;
 
 /**
  * @author Benefrancis do Nascimento
- *
+ * <p>
  * Classe para representar o plano de treino específico para o atleta
- *
  */
+@Entity
+@Table(name = "TB_TREINO")
 public class Treino {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SQ_TREINO")
+    @SequenceGenerator(name = "SQ_TREINO", sequenceName = "SQ_TREINO")
+    @Column(name = "ID_TREINO")
     private long id;
 
+    @Column(name = "NM_TREINO")
     private String nome;
 
+    @Column(name = "DESC_TREINO")
     private String descricao;
 
+    @ManyToOne(fetch = FetchType.EAGER, cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+    @JoinColumn(
+            name = "ID_PREPARADOR",
+            referencedColumnName = "ID_PREPARADOR",
+            foreignKey = @ForeignKey(name = "FK_TREINO_PREPARADOR")
+    )
     private Preparador preparador;
 
+    @Column(name = "DT_INICIO")
     private LocalDateTime inicio;
 
+    @Column(name = "DT_FIM")
     private LocalDateTime fim;
 
+    @ManyToOne(fetch = FetchType.EAGER, cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+    @JoinColumn(
+            name = "ID_FUNDAMENTO",
+            referencedColumnName = "ID_FUNDAMENTO",
+            foreignKey = @ForeignKey(name = "FK_TREINO_FUNDAMENTO")
+    )
     private Fundamento fundamento;
 
+    @ManyToOne(fetch = FetchType.EAGER, cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+    @JoinColumn(
+            name = "ID_ATLETA",
+            referencedColumnName = "ID_ATLETA",
+            foreignKey = @ForeignKey(name = "FK_TREINO_ATLETA")
+    )
     private Atleta atleta;
 
 

@@ -1,12 +1,37 @@
 package br.com.fiap.model;
 
+import jakarta.persistence.*;
+
 import java.time.LocalDate;
 
+/**
+ * @author Benefrancis do Nascimento
+ * <p>
+ * Classe que representa o Atleta
+ */
+@Entity
+@Table(name = "TB_ATLETA",
+        uniqueConstraints = {@UniqueConstraint(
+                name = "UK_CPF_ATLETA",
+                columnNames = "NR_CPF"
+        )})
 public class Atleta {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SQ_ATLETA")
+    @SequenceGenerator(name = "SQ_ATLETA", sequenceName = "SQ_ATLETA")
+    @Column(name = "ID_ATLETA")
     private long id;
+
+    @Column(name = "NM_ATLETA")
     private String nome;
+
+    @Column(name = "DT_NASCIMENTO")
     private LocalDate nascimento;
+
+    @Column(name = "NR_CPF")
     private String CPF;
+
     private float altura;
     private float peso;
 
