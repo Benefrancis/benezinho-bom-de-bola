@@ -14,17 +14,10 @@ import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
-
         EntityManagerFactory factory = Persistence.createEntityManagerFactory("oracle");
         EntityManager manager = factory.createEntityManager();
-
-        //salvar(manager);
-
-        findAll(manager);
-
         manager.close();
         factory.close();
-
     }
 
     private static void findAll(EntityManager manager) {
